@@ -1,6 +1,6 @@
 
 import React from "react";
-import { data } from "../Data"
+import { data } from "../Data.js"
 import Pics from "../../images/IMG_0554.jpg"
 import "./Banner.css"
 import "./Content.css"

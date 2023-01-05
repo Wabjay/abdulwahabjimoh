@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 
 import { HeadProvider as Head } from 'react-head';
 
-import METADATA from "../../constants/metadata";
+import METADATA from "../../constants/metadata.js";
 
-import Meta from "./Meta";
+import Meta from "./Meta.js";
 
 const propTypes = {
   title: PropTypes.string.isRequired,

@@ -1,13 +1,13 @@
 import {useEffect, useState} from 'react';
-import Head from "../components/Head";
+import Head from "../components/Head/index.js";
 import React from "react";
 import { Link } from "react-router-dom";
 // import MetaTags from 'react-meta-tags';
 import { useParams } from "react-router-dom";
 import Ayrem from "../images/ayrem.png"
 import Ethco from "../images/Ethco.png"
-import {datas} from "../components/Data"
-import {data} from "../components/Data"
+import {datas} from "../components/Data.js"
+import {data} from "../components/Data.js"
 
 
 

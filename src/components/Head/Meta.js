@@ -1,7 +1,7 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 
-import METADATA from "../../constants/metadata";
+import METADATA from "../../constants/metadata.js";
 
 const propTypes = {
   // title: PropTypes.string.isRequired,

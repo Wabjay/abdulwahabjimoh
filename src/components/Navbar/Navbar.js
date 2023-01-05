@@ -5,7 +5,7 @@ import Grid from "../../images/grid.png";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { useNavigate } from "react-router-dom";
-import ButtonMailto from "../ButtonMailto";
+import ButtonMailto from "../ButtonMailto.js";
 
 
 const Navbar = () => {

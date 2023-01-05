@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Faq from "../components/Faq/Faq";
+import Faq from "../components/Faq/Faq.js";
 import { HeadProvider as Head } from "react-head";
-import Content from "../components/Content/Content";
+import Content from "../components/Content/Content.js";
 import { Link, useNavigate } from "react-router-dom";
 import { TailSpin } from 'react-loader-spinner'
 // import MetaTags from 'react-meta-tags';
