@@ -1,0 +1,119 @@
+
+
+
+//  Theme colors
+$primary: #326dee;
+$secondary: #282F45;
+$error: #d32752;
+$info: #0D152E;
+$text: #6B6F7D;
+
+
+// color pallet
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "gray": #808080,
+    "black": black,
+    "white": white,
+    "download": #EDF2F7
+);
+
+
+
+
+
+
+// 
+$base-padding-sm :0.75rem 4.83%;
+$base-padding :1rem;
+$base-padding-bg :0.75rem 10.83%;
+
+$base-margin-sm: 0.75rem  4.83%;
+$base-margin: 1rem;
+$base-margin-bg: 0.75rem 10.83%;
+
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+
+
+// Button Color
+
+@mixin btn-color($val) {
+    @if $val == download {
+        background-color : map-get($colors, 'download');
+        color : #0D152E;
+    }
+    @else if $val == success{
+        background-color: map-get($colors, 'success');
+    }
+    @else if $val == danger{
+        background-color: map-get($colors, 'danger');
+    }@else{
+        background-color: map-get($colors, 'black');
+        color: map-get($colors, 'white');
+    }
+}
+
+
+@mixin link-button{
+    padding: $base-padding;
+    text-decoration: none;
+    text-align: center;
+    @include btn-color(download);
+    border-radius: math($base-border-radius, 4);
+    border:$base-border-thickness;
+}
+
+// UL LIST WITH LINK
+
+
+@mixin list-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    li{
+        margin-right: 10px;
+       :hover{
+           text-decoration: none;
+       }
+    }
+}
+@mixin normal_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-lg;
+    line-height: 32px;
+    color: $text;
+}
+@mixin title {
+    font-size: $font-size-xl;
+            color: $secondary;
+            font-weight: bolder;
+            padding-bottom: $base-padding * 2;
+            border-bottom: solid $base-border-thickness map-get($colors, 'download');
+            max-width: 400px;
+}

@@ -1,0 +1,130 @@
+/* INDEX STYLING  */
+.banner_content {
+  /* width: 100%; */
+  /* background-image: url("../../images/banner.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--green-900);
+  /* margin: 0 auto;
+    padding: 40px 16px; */
+  color: #FFFFFF;
+  /* height: 390px; */
+}
+
+.banner_content>div {
+  padding: 40px 16px;
+}
+
+.banner_top_text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.banner_content .bold_text,
+.banner_content .small_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  /* width: 260px; */
+
+  width: 100%;
+  max-width: 870px;
+  margin-bottom: 0;
+}
+
+#banner .bold_text {
+  color: #0D152E;
+}
+
+#banner .small_text {
+  color: #6B6F7D;
+}
+
+.banner_content .banner_btns {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.banner_btn {
+  padding: 17px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+}
+
+.banner_btn.black {
+  background-color: #0D152E;
+  color: #FFFFFF;
+}
+
+.banner_btn.white {
+  background-color: #EDF2F7;
+  color: #0D152E;
+}
+
+@media (min-width: 576px) {
+  .banner_content>div {
+    padding: 80px 24px;
+    /* height: 403px; */
+  }
+
+  .banner_top_text {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 24px;
+  }
+
+  .banner_content .bold_text,
+  .banner_content .small_text {
+    font-size: 40px;
+    line-height: 48px;
+    /* width: 340px; */
+  }
+
+  .banner_content .banner_btns {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .banner_content {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .banner_content>div {
+    max-width: 1440px;
+    padding: 100px 32px 200px;
+  }
+
+  .banner_top_text {
+    margin-bottom: 32px;
+  }
+
+  .banner_content .bold_text,
+  .banner_content .small_text {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner_content>div {
+    padding: 133px 144px 260px;
+    margin: 0 auto;
+  }
+}
