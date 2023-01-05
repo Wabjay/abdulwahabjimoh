@@ -10,7 +10,6 @@
     "react-head": "^3.4.2",
     "react-lazy-load-image-component": "^1.5.5",
     "react-loader-spinner": "^5.3.4",
-    "react-meta-tags": "^1.0.1",
     "react-router-dom": "^6.4.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "^2.1.3"

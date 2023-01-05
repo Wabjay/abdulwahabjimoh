@@ -4,7 +4,7 @@ import { HeadProvider as Head } from "react-head";
 import Content from "../components/Content/Content";
 import { Link, useNavigate } from "react-router-dom";
 import { TailSpin } from 'react-loader-spinner'
-import MetaTags from 'react-meta-tags';
+// import MetaTags from 'react-meta-tags';
 import pdfFile from '../../src/Resume-Abdulwahab-Jimoh.pdf'
 
 
@@ -15,12 +15,12 @@ const Home = () => {
 
   return (
     <div className="container">
-      <MetaTags>
+      {/* <MetaTags>
             <title>Abdulwahab Jimoh</title>
-            {/* <meta name="description" content="Some description." /> */}
+            <meta name="description" content="Some description." />
             <meta property="og:title" content="Jimoh Abdulwahab" />
             <meta property="og:image" content="path/to/image.jpg" />
-          </MetaTags>
+          </MetaTags> */}
       <Head title="Abdulwahab Jimoh" />
       <div className="banner" id="banner">
         <div className="banner_content">

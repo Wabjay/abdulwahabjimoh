@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import Head from "../components/Head";
 import React from "react";
 import { Link } from "react-router-dom";
-import MetaTags from 'react-meta-tags';
+// import MetaTags from 'react-meta-tags';
 import { useParams } from "react-router-dom";
 import Ayrem from "../images/ayrem.png"
 import Ethco from "../images/Ethco.png"
@@ -34,12 +34,12 @@ let newList = data.filter(dat =>{
     <div className="projects">
    {project && project.map(data => (  
     <>
-      <MetaTags>
+      {/* <MetaTags>
             <title>{data.appName}</title>
-            {/* <meta name="description" content="Some description." /> */}
+            <meta name="description" content="Some description." />
             <meta property="og:title" content="Abdulwahab Jimoh " />
             <meta property="og:image" content="path/to/image.jpg" />
-          </MetaTags>
+          </MetaTags> */}
     <Head title={`${data.appName} | Abdulwahab`}/>
     <div className="banner">
         <div className="banner_content"
